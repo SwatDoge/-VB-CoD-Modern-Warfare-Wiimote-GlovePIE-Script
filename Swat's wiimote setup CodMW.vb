@@ -1,5 +1,5 @@
-// Wiimote mouse script for Windows desktop
-// Requires a sensor bar
+// Wiimote script for call of duty modern warfare
+// Requires a wii sensor bar
 
 var.ButtonFreezeTime = 250ms
 var.PointerBump = KeepDown(Pressed(wiimote.A),var.ButtonFreezeTime) or KeepDown(Pressed(wiimote.B),var.ButtonFreezeTime)
@@ -38,6 +38,6 @@ Mouse.WheelDown = Wiimote1.Down and KeepDown(Wiimote.PointerVisible,0.5s)
 // Voice
 P = Wiimote1.Two and KeepDown(Wiimote.PointerVisible,0.5s)
 
-// Offsensive
+// Equipment
 Four = Wiimote1.Minus and KeepDown(Wiimote.PointerVisible,0.5s)
 G = Wiimote1.Plus and KeepDown(Wiimote.PointerVisible,0.5s)
